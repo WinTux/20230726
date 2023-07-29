@@ -1,0 +1,13 @@
+@charset "UTF-8";
+h1 {
+    background-color: rgb(187, 146, 41);
+}
+div {
+    color: rgb(94, 35, 149);
+    font-size: large;
+}
+body {
+    background-color: rgb(164, 99, 99);
+    font-family: monospace;
+    color:rgb(248, 202, 34);
+}

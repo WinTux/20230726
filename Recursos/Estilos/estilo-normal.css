@@ -1,0 +1,13 @@
+@charset "UTF-8";
+h1 {
+    background-color: yellow;
+}
+div {
+    color: blueviolet;
+    font-size: large;
+}
+body {
+    background-color: lightgray;
+    font-family: monospace;
+    color:gray;
+}
