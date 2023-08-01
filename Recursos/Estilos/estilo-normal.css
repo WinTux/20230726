@@ -11,3 +11,18 @@ body {
     font-family: monospace;
     color:gray;
 }
+
+#mensaje {
+    color: green;
+
+}
+
+.principal {
+    font-family: cursive;
+    font-size: xx-large;
+}
+
+.tremendo {
+    color: chartreuse;
+    background-color: black;
+}

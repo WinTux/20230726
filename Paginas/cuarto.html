@@ -32,10 +32,73 @@ fsd
     <p style="color: blue; background-color: gold;">Hola, soy un párrafo azul</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
     <a href="https://duckduckgo.com">IR a DuckDuckGo</a>
-    <div>Soy un simple div</div>
+    <div id="mensaje" class="principal">Soy un simple div</div>
     <h2>Formulario</h2>
-    <form action="#" method="post">
-        <!-- Estilos&más: id & clases -->
+    <form action="#" method="POST">
+        <fieldset>
+            <legend>Entrada de texto</legend>
+            <p>
+                <label for="usu">Usuario:</label>
+                <input type="text" id="usu">
+            </p>
+            <p>
+                <label for="pwd">Contraseña:</label>
+                <input type="password" id="pwd">
+            </p>
+            <p>
+                <label for="desc">Descripción:</label>
+                <textarea type="password" id="desc" rows="3" cols="80"></textarea>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Elementos de selección</legend>
+            <p>
+                <label for="miLista">Lenguajes de programación</label>
+                <select name="miLista" id="miLista">
+                    <option value="1">Java</option>
+                    <option value="2">C Sharp</option>
+                    <option value="3">C++</option>
+                    <option value="4">Python</option>
+                    <option value="5">JavaScript</option>
+                </select>
+            </p>
+            <p>
+                <label for="">Front end</label>
+                <input type="checkbox" id="fe" value="frontend">
+                <br>
+                <label for="">Back end</label>
+                <input type="checkbox" id="be" value="backend">
+            </p>
+            <p>
+                
+                <input type="radio" name="grupo1" id="opcion1">
+                <label for="">Femenino</label><br>
+                <input type="radio" name="grupo1" id="opcion2">
+                <label for="">Masculino</label><br>
+                <input type="radio" name="grupo1" id="opcion3">
+                <label for="">Otros</label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Buttons</legend>
+            <p>
+                <button type="button">Botón estandar</button>
+                <input type="button" value="Botón input">
+                <input type="reset">
+                <input type="submit" value="ENVIAR">
+            </p>
+        </fieldset>
     </form>
+    <div >
+        <p>Soy un párrafo dentro de un DIV</p>
+    </div>
+    <p class="principal">Soy un simple párrafo</p>
+    <div class="principal">
+        <a href="https://www.google.com">Otro enlace a Google</a>
+    </div>
+    <h3 class="tremendo">Titulo cualquiera</h3>
+    <h4 class="principal tremendo">Veamos como sale esto</h4>
+    <button type="button">Botón estandar</button>
+                <input type="button" value="Botón input">
 </body>
 </html>
