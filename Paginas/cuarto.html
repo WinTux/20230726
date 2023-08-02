@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -39,15 +40,15 @@ fsd
             <legend>Entrada de texto</legend>
             <p>
                 <label for="usu">Usuario:</label>
-                <input type="text" id="usu">
+                <input type="text" id="usu" placeholder="email o número de teléfono">
             </p>
             <p>
                 <label for="pwd">Contraseña:</label>
-                <input type="password" id="pwd">
+                <input type="password" id="pwd" autofocus>
             </p>
             <p>
                 <label for="desc">Descripción:</label>
-                <textarea type="password" id="desc" rows="3" cols="80"></textarea>
+                <textarea id="desc" rows="3" cols="80"></textarea>
             </p>
         </fieldset>
         <fieldset>
@@ -63,21 +64,36 @@ fsd
                 </select>
             </p>
             <p>
-                <label for="">Front end</label>
+                <label for="fe">Front end</label>
                 <input type="checkbox" id="fe" value="frontend">
                 <br>
-                <label for="">Back end</label>
+                <label for="be">Back end</label>
                 <input type="checkbox" id="be" value="backend">
             </p>
             <p>
                 
                 <input type="radio" name="grupo1" id="opcion1">
-                <label for="">Femenino</label><br>
+                <label for="opcion1">Femenino</label><br>
                 <input type="radio" name="grupo1" id="opcion2">
-                <label for="">Masculino</label><br>
+                <label for="opcion2">Masculino</label><br>
                 <input type="radio" name="grupo1" id="opcion3">
-                <label for="">Otros</label>
+                <label for="opcion3">Otros</label>
             </p>
+        </fieldset>
+        <fieldset>
+            <legend>Otros</legend>
+            <p>
+                <input type="color" id="color">
+                <input type="date" id="fecha">
+                <br>
+                <input type="datetime-local" id="datetime">
+                <input type="time" id="hora">
+                <br>
+                <label for="correo">email:</label> <input type="email" id="correo">
+                <input type="month"><br>
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" min="18" max="50">
+            </p> 
         </fieldset>
         <fieldset>
             <legend>Buttons</legend>
