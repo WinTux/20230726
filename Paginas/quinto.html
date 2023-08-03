@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semánticas</title>
+</head>
+<body>
+    <header>
+        <h4>Un header</h4>
+    </header>
+    <h3>Elementos semánticos</h3>
+    <p>Son elementos con carga semántica, sin estar obligados a aportar a la parte visual</p>
+
+    <article>
+        <header>
+            <h1>Desde
+                <em><a href="https://twitter.com/">Twitter</a></em>
+            </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, deleniti repellat, repellendus quidem quis ut quibusdam maiores recusandae ipsum rem amet consectetur blanditiis veniam sunt vel laboriosam, nostrum similique quam! Voluptatibus porro quibusdam odio officiis fugit. Ipsum vitae itaque doloribus porro optio voluptas facere similique explicabo nulla, numquam, fugiat deserunt tempora iure quod dolor et accusamus. Id repudiandae modi dicta!</p>
+        </header>
+    </article>
+
+    <aside>
+        Contenido secundario (es de fuente externa pero de contenido relacionado)
+    </aside>
+
+   <nav>
+    <h2>Navegación</h2>
+    <ul>
+        <li><a href="#">Uno</a></li>
+        <li><a href="#">Dos</a></li>
+    </ul>
+    <ol>
+        <li>Uno</li>
+        <li>Dos</li>
+    </ol>
+   </nav>
+
+   <p><dfn>guau</dfn>
+    El sonido u onomatopeya de ladrido de perro<br>
+    -- Pepe Perales
+    </p>
+
+    <figure>
+        <img src="../Recursos/Imagenes/uno.jpeg" alt="Un mapache solitario">
+        <figcaption>Fig. 1 Mapache salvaje mirando al horizonte</figcaption>
+    </figure>
+
+    <details>
+        <summary>La identidad secreta de Batman</summary>
+        <p>Bruce Wayne</p>
+    </details>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nemo aut delectus sed dignissimos, nulla paralele<wbr>pípedo asteroide et sunt veniam! Nam iusto aliquam soluta, error dolorem molestias sit doloremque sunt odit nihil.</p>
+
+    <label for="lstCargos">Su cargo 
+        <input type="text" id="lstCargos" list="cargos">
+        <datalist id="cargos">
+            <option value="Auxiliar contable"></option>
+            <option value="Auxiliar de sistemas"></option>
+            <option value="Jefe de sistemas"></option>
+            <option value="Jefe de RR. HH."></option>
+        </datalist>
+    </label>
+
+    <p>
+        Cuota <meter id="medidor1" min="0" max="10" value="3">
+    </p>
+    <p>
+        Espacio disponible (20)
+        <meter id="medidor2" min="0" max="100" value="20"
+            low="33" high="66" optimum="80">
+    </p>
+    <p>
+        Espacio disponible (50)
+        <meter id="medidor2" min="0" max="100" value="50"
+            low="33" high="66" optimum="80">
+    </p>
+    <p>
+        Espacio disponible (69)
+        <meter id="medidor2" min="0" max="100" value="69"
+            low="33" high="66" optimum="80">
+    </p>
+    <p>
+        Espacio disponible (90)
+        <meter id="medidor2" min="0" max="100" value="90"
+            low="33" high="66" optimum="80">
+    </p>
+
+    <p>Ajustes de sonido</p>
+    <div>
+        <input type="range" id="musica" name="musica" min="0" max="1000">
+        <label for="musica">Música</label>
+    </div>
+    <div>
+        <input type="range" id="efectos" name="efectos" min="0" max="100"
+        value="90" step="25">
+        <label for="efectos">Efectos</label>
+    </div>
+    
+    <p>Descargando virus</p>
+    <p>
+        Progreso:
+        <progress id="prog" value="25" max="100"></progress>
+    </p>
+
+    Búsqueda: <input type="search" id="busqueda">
+
+    <!-- tel time url week -->
+    <form action="#">
+        Su página web: <input type="url"> <input type="week">
+        <input type="submit" value="ENVIAR">
+    </form>
+
+    <footer>
+        <h2>Pie</h2>
+        <address>
+            Z. Central, No. 123<br>
+            Cod. Postal: 321<br>
+            <a href="mailto:pepe@gmail.com">pepe@gmail.com</a>
+        </address>
+
+    </footer>
+</body>
+</html>
