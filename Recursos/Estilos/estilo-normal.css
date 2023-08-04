@@ -26,3 +26,36 @@ body {
     color: chartreuse;
     background-color: black;
 }
+
+.texto-con-fondo {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 150px;
+    letter-spacing: 10px;
+    color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-image: url("../Imagenes/fondo.jpg");
+    background-size: 100%;
+}
+
+#ejemplo1 {
+    border: 10px dotted black;
+    padding: 15px;
+    background: lightskyblue;
+    background-clip: border-box;
+}
+
+#ejemplo2 {
+    border: 10px dotted black;
+    padding: 15px;
+    background: lightskyblue;
+    background-clip: padding-box;
+}
+
+#ejemplo3 {
+    border: 10px dotted black;
+    padding: 15px;
+    background: lightskyblue;
+    background-clip: content-box;
+}
