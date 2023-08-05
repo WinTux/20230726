@@ -11,11 +11,12 @@ label {/* Será el óvalo detrás del círculo*/
     height: 110px;
     position: relative;
     display: block;
-    background: #d5d4d4;
+    background: #eceaea;
     border-radius: 100px;
     box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4),
-            inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+            inset 0px -5px 15px rgba(255, 255, 255, 0.569);
     cursor: pointer;
+    transition: .4s;
 }
 
 label:after {
@@ -27,5 +28,65 @@ label:after {
     left: 10px;
     background: linear-gradient(180deg, #fbb205,#f2ff7a);
     border-radius: 90px;
-    box-shadow: 0px, 5px, 10px, rgba(0, 0, 0, 0.2);
+    box-shadow: 0px, 5px, 10px, rgba(0, 0, 0, 0.3);
+}
+input {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+/*Cambio de estado: activado, desactivado*/
+input:checked + label {
+    background: #1a3295;
+}
+
+input:checked + label:after {
+    left: 240px;
+    transform: translateX(-100%);
+    background: linear-gradient(180deg, #3326e2,#28b1ec);
+    transition: .4s;
+}
+
+label:active:after{
+    width: 110px;    
+}
+.elemento-cambiante {
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    color: #242424;
+    z-index: -1;
+    position: absolute;
+    transition: .4s;
+}
+
+input:checked + label + .elemento-cambiante {
+    background: #242424;
+    color: lightgray;
+}
+
+label svg {
+    position: absolute;
+    top: 5px;
+    z-index: 100;
+    width: 60px;
+}
+
+label svg#sol {
+    left: 25px;
+    fill:#fbb205;
+    transition: .4s;
+}
+label svg#luna {
+    left: 165px;
+    fill:#eceaea;
+    transition: .4s;
+}
+
+input:checked + label svg#sol {
+    fill: #1a3295;
+}
+input:checked + label svg#luna {
+    fill: #8ee0f0;
 }
