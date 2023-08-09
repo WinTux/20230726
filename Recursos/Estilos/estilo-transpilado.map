@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "estilo-transpilado.css",
+	"sources": [
+		"../SASS/estilo-transpilado.scss"
+	],
+	"sourcesContent": [
+		"/*\r\n    Definiendo variables y valores para nuestro octavo.html\r\n*/\r\n\r\n$bgcolor: lightblue;\r\n$colorDeTexto: darkblue;\r\n$size-Texto: 38px;\r\n\r\n/* Usando las variables*/\r\n\r\nbody {\r\n    background-color: $bgcolor;\r\n    color: $colorDeTexto;\r\n    font-size: $size-Texto;\r\n}"
+	],
+	"names": [],
+	"mappings": "AAAA;;EAEE;AAMF,yBAAyB;;AAEzB,AAAA,IAAI,CAAC;EACD,gBAAgB,EAPV,SAAS;EAQf,KAAK,EAPM,QAAQ;EAQnB,SAAS,EAPA,IAAI;CAQhB"
+}

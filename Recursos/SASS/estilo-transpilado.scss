@@ -1,0 +1,19 @@
+/*
+    Definiendo variables y valores para nuestro octavo.html
+*/
+
+$bgcolor: lightblue; 
+$colorDeTexto: darkblue;
+$size-Texto: 38px;
+$ancho: 450px;
+/* Usando las variables*/
+
+body {
+    background-color: $bgcolor;
+    color: $colorDeTexto;
+    font-size: $size-Texto;
+}
+
+#principal {
+    width: $ancho;
+}
