@@ -1,12 +1,89 @@
+/* line 1, ../../Desktop/HTML/Recursos/SASS/otro-estilo-transpilado.scss */
+html, body, ul, ol {
+  margin: 15px;
+  padding: 15px;
+}
+
 /*
     Definiendo variables y valores para nuestro octavo.html
 */
+/* line 27, ../../Desktop/HTML/Recursos/SASS/estilo-transpilado.scss */
+.articulo {
+  border: 2px solid blue;
+}
+
+/* line 31, ../../Desktop/HTML/Recursos/SASS/estilo-transpilado.scss */
+.referencia {
+  border: 5px solid orange;
+}
+
 /* Usando las variables*/
-/* line 11, ../../Desktop/HTML/Recursos/SASS/estilo-transpilado.scss */
+/* line 36, ../../Desktop/HTML/Recursos/SASS/estilo-transpilado.scss */
+h1 {
+  color: red;
+}
+
+/* line 41, ../../Desktop/HTML/Recursos/SASS/estilo-transpilado.scss */
+h2 {
+  color: darkblue;
+  font-size: 38px;
+  text-align: end;
+  color: darkblue;
+  font-size: 38px;
+  text-align: end;
+  text-shadow: 1cm;
+}
+
+/* line 46, ../../Desktop/HTML/Recursos/SASS/estilo-transpilado.scss */
+div {
+  color: darkblue;
+  font-size: 38px;
+  text-align: end;
+  background-color: bisque;
+}
+
+/* line 50, ../../Desktop/HTML/Recursos/SASS/estilo-transpilado.scss */
 body {
   background-color: lightblue;
   color: darkblue;
   font-size: 38px;
+}
+
+/* line 57, ../../Desktop/HTML/Recursos/SASS/estilo-transpilado.scss */
+#principal {
+  width: 450px;
+  font-family: Helvetica, sans-serif;
+}
+
+/* line 61, ../../Desktop/HTML/Recursos/SASS/estilo-transpilado.scss */
+p {
+  color: green;
+}
+
+/* Anidamiento de selectores con SASS */
+/* line 66, ../../Desktop/HTML/Recursos/SASS/estilo-transpilado.scss */
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 71, ../../Desktop/HTML/Recursos/SASS/estilo-transpilado.scss */
+nav li {
+  display: inline-block;
+}
+
+/* line 74, ../../Desktop/HTML/Recursos/SASS/estilo-transpilado.scss */
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+  font-size: large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: italic;
+  text-align: center;
+  text-transform: lowercase;
+  text-overflow: hidden;
 }
 
 /*# sourceMappingURL=estilo-transpilado.css.map */

@@ -1,19 +1,89 @@
+@import "otro-estilo-transpilado";
 /*
     Definiendo variables y valores para nuestro octavo.html
 */
 
+$miColor: red;
 $bgcolor: lightblue; 
 $colorDeTexto: darkblue;
 $size-Texto: 38px;
 $ancho: 450px;
-/* Usando las variables*/
+$miFont: Helvetica, sans-serif;
+@mixin textos {
+    color: $colorDeTexto;
+    font-size: $size-Texto;
+    text-align: end;
+}
 
+@mixin estilazo-especial {
+    @include textos;
+    text-shadow: 1cm;
+}
+
+@mixin bordeando($color, $ancho) {
+    border: $ancho solid $color;
+}
+
+.articulo {
+    @include bordeando(blue, 2px);
+}
+
+.referencia {
+    @include bordeando(orange, 5px);
+}
+
+/* Usando las variables*/
+h1 {
+    color: $miColor;
+    $miColor: green !global;
+    
+}
+h2 {
+    @include textos;
+    @include estilazo-especial;
+}
+
+div {
+    @include textos;
+    background-color: bisque;
+}
 body {
     background-color: $bgcolor;
     color: $colorDeTexto;
     font-size: $size-Texto;
+    
 }
 
 #principal {
     width: $ancho;
+    font-family: $miFont;
+}
+p {
+    color: $miColor;
+}
+/* Anidamiento de selectores con SASS */
+nav {
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style:none;
+    }
+    li {
+        display: inline-block;
+    }
+    a {
+        display: block;
+        padding: 6px 12px;
+        text-decoration: none;
+        font: {
+            size:large;
+            family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            style: italic;
+        }
+        text: {
+            align: center;
+            transform: lowercase;
+            overflow: hidden;
+        }
+    }
 }

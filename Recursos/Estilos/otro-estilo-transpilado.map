@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "otro-estilo-transpilado.css",
+	"sources": [
+		"../SASS/otro-estilo-transpilado.scss"
+	],
+	"sourcesContent": [
+		"html, body, ul, ol {\r\n    margin: 15px;\r\n    padding: 15px;\r\n}"
+	],
+	"names": [],
+	"mappings": ";AAAA,AAAA,IAAI,EAAE,IAAI,EAAE,EAAE,EAAE,EAAE,CAAC;EACf,MAAM,EAAE,IAAI;EACZ,OAAO,EAAE,IAAI;CAChB"
+}
