@@ -4,4 +4,23 @@ html, body, ul, ol {
   padding: 15px;
 }
 
+/* herencia */
+/* line 13, ../../Desktop/HTML/Recursos/SASS/otro-estilo-transpilado.scss */
+.fundamental, .destacado, .boton-submit {
+  color: tomato;
+  font-size: 50px;
+  text-align: center;
+  background-color: black;
+}
+
+/* line 18, ../../Desktop/HTML/Recursos/SASS/otro-estilo-transpilado.scss */
+.destacado {
+  border: none;
+}
+
+/* line 23, ../../Desktop/HTML/Recursos/SASS/otro-estilo-transpilado.scss */
+.boton-submit {
+  color: white;
+}
+
 /*# sourceMappingURL=otro-estilo-transpilado.css.map */

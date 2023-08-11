@@ -2,3 +2,25 @@ html, body, ul, ol {
     margin: 15px;
     padding: 15px;
 }
+
+/* herencia */
+@mixin titulito {
+    color: tomato;
+    font-size: 50px;
+    text-align: center;
+}
+
+.fundamental {
+    @include titulito;
+    background-color: black;
+}
+
+.destacado {
+    @extend .fundamental;
+    border: none;
+}
+
+.boton-submit {
+    @extend .fundamental;
+    color: white;
+}

@@ -24,12 +24,24 @@ $miFont: Helvetica, sans-serif;
     border: $ancho solid $color;
 }
 
+@mixin bordeando-2($color: green, $ancho: 1px){
+    border: $ancho solid $color;
+}
+
+@mixin transform($propiedad) {
+    -webkit-transform: $propiedad;
+    -ms-transform: $propiedad;
+    -moz-transform: $propiedad;
+    transform: $propiedad;
+}
+
 .articulo {
-    @include bordeando(blue, 2px);
+    @include bordeando-2($ancho: 10px, $color: lightblue);
 }
 
 .referencia {
     @include bordeando(orange, 5px);
+    @include transform(rotate(25deg));
 }
 
 /* Usando las variables*/

@@ -5,8 +5,8 @@
 		"../SASS/otro-estilo-transpilado.scss"
 	],
 	"sourcesContent": [
-		"html, body, ul, ol {\r\n    margin: 15px;\r\n    padding: 15px;\r\n}"
+		"html, body, ul, ol {\r\n    margin: 15px;\r\n    padding: 15px;\r\n}\r\n\r\n/* herencia */\r\n@mixin titulito {\r\n    color: tomato;\r\n    font-size: 50px;\r\n    text-align: center;\r\n}\r\n\r\n.fundamental {\r\n    @include titulito;\r\n    background-color: black;\r\n}\r\n\r\n.destacado {\r\n    @extend .fundamental;\r\n    border: none;\r\n}\r\n\r\n.boton-submit {\r\n    @extend .fundamental;\r\n    color: white;\r\n}\r\n"
 	],
 	"names": [],
-	"mappings": ";AAAA,AAAA,IAAI,EAAE,IAAI,EAAE,EAAE,EAAE,EAAE,CAAC;EACf,MAAM,EAAE,IAAI;EACZ,OAAO,EAAE,IAAI;CAChB"
+	"mappings": ";AAAA,AAAA,IAAI,EAAE,IAAI,EAAE,EAAE,EAAE,EAAE,CAAC;EACf,MAAM,EAAE,IAAI;EACZ,OAAO,EAAE,IAAI;CAChB;;AAED,cAAc;;AAOd,AAAA,YAAY,EAKZ,UAAU,EAKV,aAAa,CAVA;EALT,KAAK,EAAE,MAAM;EACb,SAAS,EAAE,IAAI;EACf,UAAU,EAAE,MAAM;EAKlB,gBAAgB,EAAE,KAAK;CAC1B;;;AAED,AAAA,UAAU,CAAC;EAEP,MAAM,EAAE,IAAI;CACf;;;AAED,AAAA,aAAa,CAAC;EAEV,KAAK,EAAE,KAAK;CACf"
 }
