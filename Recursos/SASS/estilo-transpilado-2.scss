@@ -28,6 +28,8 @@ h1 {
    Cadena resultante sería:
    "Hola Pepe"
    */
+
+/* Funciones sobre cadenas */
 @debug str-insert($string: "Pepe", $insert: "Hola ", $index: 1);
 @debug quote($string: "Ana");
 @debug unquote($string: "Ana");
@@ -40,3 +42,5 @@ h1 {
 @debug unique-id();
 @debug unique-id();
 @debug unique-id();
+
+/* funciones sobre los números */
