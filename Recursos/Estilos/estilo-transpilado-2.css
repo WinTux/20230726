@@ -1,0 +1,28 @@
+@charset "UTF-8";
+/* Funciones CSS */
+p {
+  color: rgb(42, 154, 179);
+}
+
+h1 {
+  color: rgb(42, 154, 179);
+}
+
+#valores {
+  color: rgb(42, 154, 179);
+}
+
+#variables {
+  color: rgb(42, 154, 179);
+}
+
+/* Funcies de SASS (nativas) */
+/* Cadena original
+   "Pepe"
+
+   Cadena que quiereo insertar:
+   "Hola "
+
+   Cadena resultante sería:
+   "Hola Pepe"
+   */

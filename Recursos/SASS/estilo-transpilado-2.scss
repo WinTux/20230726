@@ -1,0 +1,42 @@
+$numeroX: 45;
+@debug $numeroX;
+@debug $numeroX;
+
+/* Funciones CSS */
+p {
+    color: rgb(42, 154, 179);
+}
+
+h1 {
+    color: rgb($red: 42, $blue: 179, $green: 154);
+}
+
+#valores {
+    color: rgb($red: 42, $blue: 179, $green: 154);
+}
+#variables {
+    $red: 42;
+    color: rgb($red: $red, $blue: 179, $green: 154);
+}
+/* Funcies de SASS (nativas) */
+/* Cadena original
+   "Pepe"
+   
+   Cadena que quiereo insertar:
+   "Hola "
+
+   Cadena resultante sería:
+   "Hola Pepe"
+   */
+@debug str-insert($string: "Pepe", $insert: "Hola ", $index: 1);
+@debug quote($string: "Ana");
+@debug unquote($string: "Ana");
+@debug str-length($string: "Hola mundo");
+@debug str-slice($string: "Hola Pepe", $start-at: 3, $end-at: 7);
+@debug to-lower-case($string: "Hello World!!");
+@debug to-upper-case($string: "Hello World!!");
+@debug unique-id();
+@debug unique-id();
+@debug unique-id();
+@debug unique-id();
+@debug unique-id();
