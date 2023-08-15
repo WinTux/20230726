@@ -44,3 +44,81 @@ h1 {
 @debug unique-id();
 
 /* funciones sobre los números */
+@debug abs(-9);
+@debug abs(18);
+@debug abs(-0);
+@debug ceil(15.0001);
+@debug comparable(15px, 21px);
+@debug comparable(15cm, 21mm);
+@debug comparable(15px, 21em);
+@debug floor(15.9999999);
+@debug max(5, 7, -15, 18, 1, 20, 5);
+@debug min(5, 7, -15, 18, 1, 20, 5);
+@debug percentage(0);
+@debug percentage(1);
+@debug percentage(0.56);
+@debug percentage(1.2);
+@debug percentage(3*0.2);
+@debug random();
+@debug random();
+@debug random();
+@debug random();
+@debug random();
+@debug ceil(random()*10);
+@debug ceil(random()*10);
+@debug floor(random()*10);
+@debug floor(random()*10);
+@debug "*********** DADO **********";
+@debug random(6);
+@debug random(6);
+@debug random(6);
+@debug random(6);
+@debug random(6);
+@debug random(6);
+@debug random(6);
+@debug random(6);
+@debug random(6);
+@debug "*********** FIN DADO **********";
+@debug round(15.20);
+@debug round(15.85);
+
+/*  @debug call(round, 15.56); */
+
+/* Condicionales */
+@debug if(1 > 1, 10px, 20px);
+
+/* Tipos de datos */
+$font_para_body: Helvetica, Arial, sans-serif;
+$margin-para-body: 0 0 10px 50px;
+$lista-cualquiera: 10, 10 0, 3;
+$lista-cualquiera-2: 10, (10 0), 3;
+/* 4 + (5 * 3) = 19 */
+$lista-vacia: ();
+$lista-compuesta: 10px () 30px 0;
+h5 {
+    margin: $lista-compuesta;
+}
+@debug length($lista-compuesta);
+@debug nth($lista-compuesta, 3);
+/* 1ro 2da 3ra 4to 5ta n-avo n-ésimo */ 
+@debug set-nth($lista-compuesta, 2, 15px );
+@debug $lista-compuesta;
+@debug join($lista-compuesta, $lista-cualquiera, "comma");//space
+
+$cosas: (
+    "rojito": #FF1122,
+    "azul": rgb(0,0,200),
+    "verde": #55FF33
+);
+
+@debug map-get($cosas, "rojito");
+@debug map-has-key($cosas, "azulito");
+@debug map-has-key($cosas, "azul");
+
+@debug map-remove($cosas, "azul");
+
+@debug map-merge($cosas, ("rosita": #FFC0B0));
+
+.boton-ejemplo {
+    background-color: map-get($cosas, "rosita");
+}
